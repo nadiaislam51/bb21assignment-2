@@ -4,9 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
+    <link rel="shortcut icon" href="./images/fitness.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
+    <title>Fitness Assignment</title>
 </head>
 <body>
+    <header id="header">
+        <div class="container header">
+          <nav class="display-flex">
+            <h4 class="logo">Fitness</h4>
+            <ul class="display-flex">
+              <li><a href="#" id="active">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+          </nav>
+          <section class="banner display-flex">
+            <div class="banner-text-container">
+              <h1 class="heading">Get body in <br><span class="miama">shape</span> & stay <br> healthy</h1>
+              <p class="description-text">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+              <div class="buttons display-flex">
+                <button class="btn1"><a href="#">Join <span class="hidden">Club</span> Now!</a></button>
+                <button class="btn2"><a href="#">Download App</a></button>
+              </div>
+            </div>
+            <div class="banner-image-container">
+              <img src="./images/featured.png" alt="">
+              <div class="card1 display-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="card1-text-container">
+                  <h4 class="count">350+</h4>
+                  <p class="description-text">Video tutorial</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="count">500+</h4>
+                <p class="description-text">Free Workout Videos</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <section class="container">
+        <!-- habit section starts -->
+        <section class="habit">
+          <div class="habit-text-container">
+            <h2 class="section-title text-align-center">Change Your Habits</h2>
+            <p class="description-text text-align-center">Transform your routine for better health. Our expert tips and strategies make habit changes<br>simple and effective</p>
+            <div class="habit-images-container display-flex">
+              <div class="image-box text-align-center">
+                <div class="habit-image"><img src="./images/image 3.png" alt=""></div>
+                <h4 class="habit-title">Movement</h4>
+                <p class="description-text">Move daily to stay strong and healthy</p>
+              </div>
+              <div class="image-box text-align-center">
+                <div class="habit-image"><img src="./images/image 2.png" alt=""></div>
+                <h4 class="habit-title">Time</h4>
+                <p class="description-text">Dedicate time each day for fitness goals</p>
+              </div>
+              <div class="image-box text-align-center">
+                <div class="habit-image"><img src="./images/image 5.png" alt=""></div>
+                <h4 class="habit-title">Practice</h4>
+                <p class="description-text">Consistent practice leads to great results</p>
+              </div>
+              <div class="image-box text-align-center">
+                <div class="habit-image"><img src="./images/image 4.png" alt=""></div>
+                <h4 class="habit-title">Weight Loss</h4>
+                <p class="description-text">Lose weight by combining diet and exercise</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- habit section ends -->
+        <!-- target section starts -->
+        <section class="target display-flex background-color">
+          <div class="target-text-container">
+            <h2 class="section-title">Run an Extra <br>Mile Easily</h2>
+            <p class="description-text">Running farther is achievable with the right guidance. Our training plans and tips make it easy to add extra miles to your runs</p>
+            <button class="btn1"><a href="#">Join Now</a></button>
+          </div>
+          <div class="target-image-container">
+            <img src="./images/run.jpg" alt="">
+          </div>
+        </section>
+        <!-- target section ends -->
+        </section>
+        <!-- calculator section starts -->
+        <section class="calculator">
+          <div class="calculator-text-container container">
+            <h2 class="section-title">BMI Calculator</h2>
+            <p class="description-text">Easily track your health with our BMI Calculator. This tool helps you understand your body composition and guides you towards your fitness goals.</p>
+          </div>
+          <div class="calculator-container background-color">
+            <div class="container display-flex chart-input">
+              <div class="chart">
+                <h3 class="column-title">BMI Calculator Chart</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>BMI</th>
+                      <th>Weight Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Below 18.5</td>
+                      <td>Underweight</td>
+                    </tr>
+                    <tr>
+                      <td>18.5 - 24.9 </td>
+                      <td>Healthy</td>
+                    </tr>
+                    <tr>
+                      <td>25.0 - 29.9</td>
+                      <td>Overweight</td>
+                    </tr>
+                    <tr>
+                      <td>30.0 - and Above</td>
+                      <td>Obese</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="bmi-input">
+                <h3 class="column-title">Calculate your BMI</h3>
+                <p class="description-text">Simply input your height and weight to get an instant assessment of your Body Mass Index.</p>
+                <form action="">
+                  <input type="text" placeholder="Height/cm" required>
+                  <input type="text" placeholder="Weight/kg" required>
+                  <input type="text" placeholder="Age" required>
+                  <select>
+                    <option value="Sex">Sex</option>
+                    <option value="Sex">Male</option>
+                    <option value="Sex">Female</option>
+                  </select><br>
+                  <select class="factor">
+                    <option value="factor" class="factor">Select an activity factor</option>
+                    <option value="factor" class="factor">Running</option>
+                    <option value="factor" class="factor">Swimming</option>
+                  </select><br>
+                  <input class="btn1" type="button" value="Calculate">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- calculator section ends -->
+        <section class="container">
+        <!-- team section starts -->
+        <section class="team">
+          <h2 class="section-title text-align-center">Meet Our Team</h2>
+          <p class="description-text text-align-center">Our dedicated team is here to help you reach your fitness goals. With expertise and passion, we provide support and guidance every step of the way</p>
+          <div class="gallery  background-color">
+            <div class="gallery-image mobile-none">
+              <img src="./images/trainer1.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Jerome Bell</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <img src="./images/trainer2.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Cameron Williamson</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <img src="./images/trainer3.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Darrell Steward</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+            <div class="gallery-image mobile-none">
+              <img src="./images/trainer4.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Dianne Russell</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <img src="./images/trainer5.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Cody Fisher</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <img src="./images/trainer6.png" alt="">
+              <div class="gallery-text">
+                <h4 class="name">Theresa Webb</h4>
+                <p class="description-text">Trainer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- team section ends -->
+        </section>
+        <section class="testimonial">
+          <div class="container">
     
+            <div class="testimonial-container text-align-center">
+              <div class="testimonial-image-container">
+                <img src="./images/image5.png" alt="">
+              </div>
+              <div class="testimonial-text-container">
+                <p class="description-text "><q>The expert tips have made a huge difference in my fitness journey. Highly recommend!</q></p>
+                <p class="name">— John R.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <footer class="background-color">
+        <div class="container">
+          <section class="footer-col-container ">
+            <div class="col1">
+              <h4 class="logo">Fitness</h4>
+              <p class="description-text">We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                access to a gym. With hundreds of professional workouts.</p>
+            </div>
+            <div class="col2">
+              <h3 class="column-title">Get Started</h3>
+              <p class="description-text"><a href="#">Service</a></p>
+              <p class="description-text"><a href="#">Contact Us</a></p>
+              <p class="description-text"><a href="#">Affiliate Program</a></p>
+              <p class="description-text"><a href="#">About Us</a></p>
+            </div>
+            <div class="col3">
+              <h3 class="column-title">Get Started</h3>
+              <p class="description-text"><a href="#">Fitness</a></p>
+              <p class="description-text"><a href="#">Platform</a></p>
+              <p class="description-text"><a href="#">Workout Library</a></p>
+              <p class="description-text"><a href="#">App Design</a></p>
+            </div>
+          </section>
+            <p class="description-text text-align-center"><a href="#">All right reserved @Fitness 2024</a></p>
+            <br>
+        </div>
+      </footer>
+   
 </body>
 </html>
